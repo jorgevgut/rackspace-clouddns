@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'spec_helper.rb'
 gem 'rackspace-clouddns'
 gem 'rspec'
 describe 'Domain_test' do
@@ -11,8 +11,8 @@ describe 'Domain_test' do
     #domain = dns.create_domain('rubyspecs.com', :email => 'jogeavi914@gmail.com')
     
     #obtenemos la lista de los dominios
-    domains = dns.domains
+    #domains = dns.domains
     
-    puts domains
+    #puts domains
   end
 end
