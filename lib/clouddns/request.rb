@@ -84,7 +84,7 @@ module CloudDns
       }
       
       response = connection(api_auth).send(:get) do |request|
-        request.url("/v1.0")
+        request.url("/v2.0")
         request.headers.merge!(headers)
       end
     end
