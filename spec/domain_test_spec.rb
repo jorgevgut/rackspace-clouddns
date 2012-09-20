@@ -6,7 +6,14 @@ describe 'Domain_test' do
     #creamos el cliente dns
     dns = CloudDns.new(:username => 'jogeavi914', :api_key => '9d6c2204896497a4bcec4223227e936b')
     
-    puts dns 
+    dns.username
+    dns.api_auth
+    dns.account_id
+    dns.api_key
+    dns.api_base
+    dns.auth_token
+    doms = dns.get_domains
+     
     #creamos un dominio nuevo
     #domain = dns.create_domain('rubyspecs.com', :email => 'jogeavi914@gmail.com')
     
