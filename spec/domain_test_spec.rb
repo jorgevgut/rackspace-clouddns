@@ -4,7 +4,7 @@ gem 'rspec'
 describe 'Domain_test' do
   it 'Crea cliente cloudDNS y dominio' do
     #creamos el cliente dns
-    dns = CloudDns::Client.new(:username => 'jogeavi914', :api_key => '9d6c2204896497a4bcec4223227e936b', :location => :us)
+    dns = CloudDns.new(:username => 'jogeavi914', :api_key => '9d6c2204896497a4bcec4223227e936b')
     
     puts dns 
     #creamos un dominio nuevo
