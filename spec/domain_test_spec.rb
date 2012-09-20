@@ -1,4 +1,4 @@
-#require 'spec_helper.rb'
+require 'spec_helper'
 gem 'rackspace-clouddns'
 gem 'rspec'
 describe 'Domain_test' do
