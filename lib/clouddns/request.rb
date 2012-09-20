@@ -87,7 +87,7 @@ module CloudDns
       }
       
       response = connection(api_auth).send(:get) do |request|
-        request.url("https://identity.api.rackspacecloud.com/v2.0/tokens") #url completa
+        request.url("http://identity.api.rackspacecloud.com/v2.0/tokens") #url completa
         request.headers.merge!(headers)
       end
     end
