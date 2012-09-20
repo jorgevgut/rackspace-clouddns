@@ -7,9 +7,9 @@ describe 'Domain_test' do
     dns = CloudDns::Client.new(:username => 'jogeavi914', :api_key => '9d6c2204896497a4bcec4223227e936b', :location => :us)
     
     #creamos un dominio nuevo
-    #domain = dns.create_domain('rubyspecs.com', :email => 'jogeavi914@gmail.com')
+    domain = dns.create_domain('rubyspecs.com', :email => 'jogeavi914@gmail.com')
     
     #obtenemos la lista de los dominios
-    #domains = dns.domains
+    domains = dns.domains
   end
 end
