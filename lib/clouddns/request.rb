@@ -79,7 +79,9 @@ module CloudDns
     def authentication_request
       headers = {
         'Content-Type' => 'application/json',
-        'Accept'       => 'application/json',
+        'Accept'       => 'application/xml', #application/json',
+        #sigo actualizando de acuerdo al API v2.0
+        #http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Sample_Request_Response-d1e64.html#d6e766
         'X-Auth-User'  => username || '',
         'X-Auth-Key'   => api_key  || '',
       }
