@@ -56,7 +56,7 @@ module CloudDns
         'X-Auth-Token' => auth_token
       }
       
-      path = "/v1.0/#{account_id}#{path}?showDetails=true"
+      path = "/v2.0/#{account_id}#{path}?showDetails=true"
         
       response = connection(api_base).send(method) do |request|
         request.headers.merge!(headers)
